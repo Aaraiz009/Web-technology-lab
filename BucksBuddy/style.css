@@ -1,0 +1,178 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color:black;
+}
+
+.nav-links a {
+  color: #ffdd91;
+  margin-left: 22px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffd35b;
+  text-decoration: underline;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  width: 350px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 8px 12px;
+  border: none;
+  background: #febd69;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(to right, #f3a847, #febd69);
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Product Section */
+.products {
+  padding: 30px;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.product h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.product p {
+  color: green;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.product button {
+  background: #ffa41c;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: #f09300;
+}
+
+/* Auth Pages */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f1f1f1;
+}
+
+.auth-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 20px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background: #232f3e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-box button:hover {
+  background: #37475a;
+}
+
+.auth-box a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007185;
+}
+
+.auth-box a:hover {
+  text-decoration: underline;
+}
