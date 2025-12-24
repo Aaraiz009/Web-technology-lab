@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Number</td>
+            <td>Square</td>
+            <td>Cube</td>
+        </tr>
+    </table>
+    <script>
+        let t = document.querySelector("table");
+        for (let i = 1; i < 21; i++) {
+                setTimeout(function () {
+                let row = document.createElement("tr");
+                let td1 = document.createElement("td");
+                let td2 = document.createElement("td");
+                let td3 = document.createElement("td");
+                td1.innerText = i;
+                td2.innerText = i * i;
+                td3.innerText = i * i * i;
+                row.appendChild(td1);
+                row.appendChild(td2);
+                row.appendChild(td3);
+                t.appendChild(row);
+
+            },i * 1000);
+        }
+    </script>
+</body>
+
+</html>

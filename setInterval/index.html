@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time</title>
+</head>
+<body>
+    <p></p>
+    <script>
+
+        function updateTime(){
+        let t = new Date();
+        let el = document.body.children[0];
+        el.innerText = t.toLocaleString();
+        }
+        updateTime();
+        setInterval(updateTime,1000);
+
+    </script>
+</body>
+</html>

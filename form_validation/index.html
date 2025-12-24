@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="index.php" method="post">
+        Email : <input type="text" name="abc" id="abc">
+        <button id="submit">submit</button>
+    </form>
+    <script>
+        email = document.getElementById("abc");
+
+        document.addEventListener("submit", (event) => {
+
+            em = email.value;
+            event.preventDefault();
+
+            if (em.includes("@gmail.com")) {
+                alert("Correct email")
+            }
+            else {
+                let p = document.createElement("p")
+                    p.innerText = "Please Enter a valid email"
+                    p.style.color = "red"
+                    document.querySelector("form").appendChild(p)
+            }
+        })
+    </script>
+</body>
+
+</html>
